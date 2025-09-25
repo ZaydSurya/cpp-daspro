@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1758547362 source:c:\users\admin\documents\udinus\dasar pemrograman\c++\pembelajaran\main.cpp
+	<iostream>
+	"p1.h"
+	"p2.h"
+
+1758545661 c:\users\admin\documents\udinus\dasar pemrograman\c++\pembelajaran\p1.h
+
+1758548209 source:c:\users\admin\documents\udinus\dasar pemrograman\c++\pembelajaran\p1.cpp
+	<iostream>
+	"p1.h"
+	"p2.h"
+	<limits>
+
+1758547303 c:\users\admin\documents\udinus\dasar pemrograman\c++\pembelajaran\p2.h
+
+1758560618 source:c:\users\admin\documents\udinus\dasar pemrograman\c++\pembelajaran\p2.cpp
+	<iostream>
+	"p2.h"
+	"p1.h"
+	<limits>
+
