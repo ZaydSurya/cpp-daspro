@@ -39,6 +39,8 @@
 		<Unit filename="p1.h" />
 		<Unit filename="p2.cpp" />
 		<Unit filename="p2.h" />
+		<Unit filename="p3.cpp" />
+		<Unit filename="p3.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

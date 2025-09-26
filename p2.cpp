@@ -8,7 +8,7 @@ using namespace std;
 void dataP2(){
     string nama;
     cout << "-------------------------------------" << endl;
-    cout << "Pertemuan 2 : Variabel dan Logika C++" << endl;
+    cout << "Pertemuan 2 : Tipe Data" << endl;
     cout << "-------------------------------------\n" << endl;
 
 }
@@ -36,7 +36,6 @@ void kasus2P2(){
 void kasus3P2(){
     cout << "Hello World";
 }
-
 
 void sistemP2(){
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
