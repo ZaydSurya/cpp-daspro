@@ -9,16 +9,17 @@ void dataP1(){
     string nama;
     string jurusan;
     string univ;
+
     cout << "----------------------------" << endl;
     cout << "Pertemuan 1 : Pengenalan C++" << endl;
     cout << "----------------------------" << endl;
-    cout << "Mari kita kenalan dulu yuk.\n" << endl;
+    cout << "Mari kita kenalan dulu yuk." << endl;
 
-    cout << "Nama kamu siapa\t :";
+    cout << "Nama kamu siapa\t : ";
     getline(cin, nama);
-    cout << "Jurusan apa\t :";
+    cout << "Jurusan apa\t : ";
     getline(cin, jurusan);
-    cout << "Kuliah dimana\t :";
+    cout << "Kuliah dimana\t : ";
     getline(cin, univ);
     cout << '\n' << endl;
 
@@ -32,7 +33,6 @@ void dataP1(){
 
 void sistemP1(){
     char pilihan;
-
     do {
         dataP1();
         cout << "Apakah kamu ingin mencoba kembali ? [y/n] "; cin >> pilihan;

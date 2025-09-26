@@ -16,6 +16,7 @@ int main(){
         cout << "2. Pertemuan 2 : Tipe Data" << endl;
         cout << "3. Pertemuan 3 : Variabel dan Logika\n" << endl;
         cout << "Pilih salah satu pembelajaran C++ : "; cin >> pilihan;
+        cout << '\n';
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         switch(pilihan) {
             case 1 :

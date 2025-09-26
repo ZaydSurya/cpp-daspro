@@ -15,10 +15,8 @@ void dataP3(){
 void kasus1P3(){
     int rib,rat,pul,sat, madRat, madRib, data, rb, rt, pl;
 
-    cin.ignore(numeric_limits<streamsize>::max());
-
     cout << "Konversi nominal dari 1234 menjadi beberapa bagian" << endl;
-    cout << "Silahkan masukan nominal [1234] : "; cin >> data;
+    cout << "Silahkan masukan nilainya : "; cin >> data;
 
     rib = data / 1000; // Yang ini 1,234 -> karena integer jadinya 1
     madRib = data % 1000; // Nantikan dapetnya sisa, 234
@@ -37,13 +35,12 @@ void kasus1P3(){
 }
 
 void sistemP3(){
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
     int pilihan;
     dataP3();
 
     do {
         cout << "Program Python 3 :" << endl;
+        cout << "------------------" << endl;
         cout << "1. Nominal Angka\n" << endl;
         cout << "Pilih salah satu program : ";
         cin >> pilihan;
