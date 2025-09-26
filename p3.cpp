@@ -15,8 +15,13 @@ void dataP3(){
 void kasus1P3(){
     int rib,rat,pul,sat, madRat, madRib, data, rb, rt, pl;
 
-    cout << "Konversi nominal dari 1234 menjadi beberapa bagian" << endl;
+    cout << "Konversi Nilai dari Ribuan" << endl;
+    cout << "------------------------------" << endl;
+    cout << "Input\t: 5214 || 1234 || 5123\n" << "Output\t: 5 Ribuan, 2 Ratusan, 1 Puluhan, 4 Satuan\n" << "\t: 5000, 200, 10, 4" << endl;
+    cout << "------------------------------" << endl;
     cout << "Silahkan masukan nilainya : "; cin >> data;
+
+    cout << '\n';
 
     rib = data / 1000; // Yang ini 1,234 -> karena integer jadinya 1
     madRib = data % 1000; // Nantikan dapetnya sisa, 234
@@ -29,7 +34,6 @@ void kasus1P3(){
     rt = madRib - madRat;
     pl = madRat - sat;
 
-
     cout << rib << " Ribuan, " << rat << " Ratusan, " << pul << " Puluhan, " << sat << " Satuan." << endl;
     cout << rb << ", " << rt << ", " << pl << ", " << sat << ".\n" << endl;
 }
@@ -37,13 +41,13 @@ void kasus1P3(){
 void sistemP3(){
     int pilihan;
     dataP3();
-
     do {
         cout << "Program Python 3 :" << endl;
         cout << "------------------" << endl;
         cout << "1. Nominal Angka\n" << endl;
         cout << "Pilih salah satu program : ";
         cin >> pilihan;
+        cout << '\n';
 
         switch(pilihan){
             case 1 :

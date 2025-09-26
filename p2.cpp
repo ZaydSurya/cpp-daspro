@@ -99,7 +99,71 @@ void kasus2P2(){
 }
 
 void kasus3P2(){
-    cout << "Hello World";
+    float c,f,k,r;
+    int pilihan;
+    char coba;
+    do {
+        cout << "Program Konversi Suhu" << endl;
+        cout << "1. Celcius" << endl;
+        cout << "2. Fahrenheit" << endl;
+        cout << "3. Kelvin" << endl;
+        cout << "4. Reamur" << endl;
+        cout << "Pilih salah satu suhu awal : "; cin >> pilihan;
+        cout << '\n';
+
+        if(pilihan == 1){
+            cout << "Masukkan nilai Celcius : "; cin >> c;
+            cout << "-------------------------" << endl;
+            f = (9.0/5.0)*c + 32;
+            k = c + 273.15;
+            r = (4.0/5.0)*c;
+
+            cout << "Konversi suhu ke Fahrenheit adalah\t: " << f << endl;
+            cout << "Konversi suhu ke Kelvin adalah\t\t: " << k << endl;
+            cout << "Konversi suhu ke Reamur adalah\t\t: " << r << endl << '\n';
+        } else if(pilihan == 2){
+            cout << "Masukkan nilai Fahrenheit : "; cin >> f;
+            cout << "-------------------------" << endl;
+            c = 5.0/9.0*(f-32);
+            k = 5.0/9.0*(f-32)+273.15;
+            r = 4.0/9.0*(f-32);
+
+            cout << "Konversi suhu ke Celcius adalah\t: " << c << endl;
+            cout << "Konversi suhu ke Kelvin adalah\t: " << k << endl;
+            cout << "Konversi suhu ke Reamur adalah\t: " << r << endl << '\n';
+        } else if(pilihan == 3){
+            cout << "Masukkan nilai Kelvin : "; cin >> k;
+            cout << "-------------------------" << endl;
+            c = k-273.15;
+            f = 5.0/9.0*(k-273.15)+32;
+            r = 4.0/9.0*(k-273.15);
+
+            cout << "Konversi suhu ke Celcius adalah\t\t: " << c << endl;
+            cout << "Konversi suhu ke Fahrenheit adalah\t: " << f << endl;
+            cout << "Konversi suhu ke Reamur adalah\t\t: " << r << endl << '\n';
+        } else if(pilihan == 4){
+            cout << "Masukkan nilai Reamur : "; cin >> r;
+            cout << "-------------------------" << endl;
+            c = (5.0/4.0)*r;
+            f = (9.0/4.0)*r+32;
+            k = 5.0/4.0*r+273.15;
+
+            cout << "Konversi suhu ke Celcius adalah\t\t: " << c << endl;
+            cout << "Konversi suhu ke Fahrenheit adalah\t: " << f << endl;
+            cout << "Konversi suhu ke Kelvin adalah\t\t: " << k << endl << '\n';
+        } else {
+            cout << "Program tidak ditemukan" << endl;
+        }
+
+        cout << "Apakah ingin melanjutkannya? [y/n] : "; cin >> coba;
+        if (coba == 'y'){
+            cout << "Kamu akan kembali ke suhu Awal\n" << endl;
+        } else if (coba == 'n'){
+            //
+        }
+
+    } while (coba == 'y');
+
 }
 
 void sistemP2(){
