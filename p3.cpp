@@ -5,7 +5,6 @@
 using namespace std;
 
 void dataP3(){
-    string nama;
     cout << "-------------------------------------" << endl;
     cout << "Pertemuan 3 : Variabel dan Logika C++" << endl;
     cout << "-------------------------------------" << endl;
@@ -98,12 +97,14 @@ void kasus3P3(){
     cout << "Menampilkan Tabel Operator Logika True & False" << endl;
     cout << "----------------------------------------------\n" << endl;
 
-    cout << "-------------------------------------------------------------" << endl;
-    cout << "| a | b | a and b | a or b | not a | a not b | a eq b | a neq b |" << endl;
-    cout << "-------------------------------------------------------------" << endl;
+    cout << "---------------------------------------------------------------" << endl;
+    cout << "| a | b | a and b | a or b | not a | not b | a eq b | a neq b |" << endl;
+    cout << "---------------------------------------------------------------" << endl;
 
-    cout << "| " << a1 << " | " << b1 << " |    " << (a1&&b1) << "    |   " << (a1||b1) << "   |   " << (!a1) << "   |   " << (!b1) << " |    "  << (a1==b1) << "    | " << (!a1==b1) << " | \n" << endl;
-
+    cout << "| " << a1 << " | " << b1 << " |    " << (a1&&b1) << "    |    " << (a1||b1) << "   |   " << (!a1) << "   |   " << (!b1) << "   |    "  << (a1==b1) << "   |    " << (!a1==b1) << "    |" << endl;
+    cout << "| " << a2 << " | " << b2 << " |    " << (a2&&b2) << "    |    " << (a2||b2) << "   |   " << (!a2) << "   |   " << (!b2) << "   |    "  << (a2==b2) << "   |    " << (!a2==b2) << "    |" << endl;
+    cout << "| " << a3 << " | " << b3 << " |    " << (a3&&b3) << "    |    " << (a3||b3) << "   |   " << (!a3) << "   |   " << (!b3) << "   |    "  << (a3==b3) << "   |    " << (!a3==b3) << "    |" << endl;
+    cout << "| " << a4 << " | " << b4 << " |    " << (a4&&b4) << "    |    " << (a4||b4) << "   |   " << (!a4) << "   |   " << (!b4) << "   |    "  << (a4==b4) << "   |    " << (!a4==b4) << "    |\n" << endl;
 }
 
 
@@ -113,9 +114,10 @@ void sistemP3(){
     do {
         cout << "Program Python 3 :" << endl;
         cout << "------------------" << endl;
-        cout << "1. Konversi Nilai Ribuan" << endl;
-        cout << "2. Operator logika Sederhana" << endl;
-        cout << "3. Tabel Operator Logika\n" << endl;
+        cout << "1. Kasus 1 : Konversi Nilai Ribuan" << endl;
+        cout << "2. Kasus 2 : Operator logika Sederhana" << endl;
+        cout << "3. Kasus 3 : Tabel Operator Logika\n" << endl;
+        cout << "0. Kembali\n " << endl;
         cout << "Pilih salah satu program : ";
         cin >> pilihan;
         cout << '\n';

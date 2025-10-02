@@ -5,6 +5,8 @@
 *.so
 *.a
 
+.vscode/
+build/
 bin/
 obj/
 
