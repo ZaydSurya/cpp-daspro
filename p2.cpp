@@ -108,6 +108,8 @@ void kasus3P2(){
         cout << "2. Fahrenheit" << endl;
         cout << "3. Kelvin" << endl;
         cout << "4. Reamur" << endl;
+        cout << "------------------" << endl;
+        cout << "0. Kembali\n" << endl;
         cout << "Pilih salah satu suhu awal : "; cin >> pilihan;
         cout << '\n';
 
@@ -151,8 +153,10 @@ void kasus3P2(){
             cout << "Konversi suhu ke Celcius adalah\t\t: " << c << endl;
             cout << "Konversi suhu ke Fahrenheit adalah\t: " << f << endl;
             cout << "Konversi suhu ke Kelvin adalah\t\t: " << k << endl << '\n';
+        } else if (pilihan == 0) {
+            //
         } else {
-            cout << "Program tidak ditemukan" << endl;
+            cout << "Input tidak ditemukan atau tidak valid\n" << endl;
         }
 
         cout << "Apakah ingin melanjutkannya? [y/n] : "; cin >> coba;
@@ -176,6 +180,7 @@ void sistemP2(){
         cout << "1. Kasus 1 : Aritmatika dengan Operator" << endl;
         cout << "2. Kasus 2 : Mencari Nilai Y dari Persamaan" << endl;
         cout << "3. Kasus 3 : Konversi Suhu Celcius" << endl;
+        cout << "-------------------" << endl;
         cout << "0. Kembali\n " << endl;
         cout << "Pilih salah satu kasus : "; cin >> pilihan;
         cout << '\n';

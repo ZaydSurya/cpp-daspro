@@ -60,8 +60,8 @@ void kasus2P3(){
 
         cout << "Studi Kasus Penemuan Paus dan Hiu\n" << endl;
         cout << "Diketahui bahwasanya :" << endl;
-        cout << "1. Hiu dapat ditemukan di kedalaman 200 - 1000 meter di bawah permukaan laut." << endl;
-        cout << "2. Paus dapat ditemukan di kedalaman 1500 - 3000 meter di bawah permukaan laut.\n" << endl;
+        cout << "* Hiu dapat ditemukan di kedalaman 200 - 1000 meter di bawah permukaan laut." << endl;
+        cout << "* Paus dapat ditemukan di kedalaman 1500 - 3000 meter di bawah permukaan laut.\n" << endl;
         cout << "Silahkan memasukkan nilai kedalaman untuk bertemu salah satunya." << endl;
         cout << "Masukkan nilai : "; cin >> nilai;
         cout << '\n';
@@ -112,11 +112,12 @@ void sistemP3(){
     int pilihan;
     dataP3();
     do {
-        cout << "Program Python 3 :" << endl;
+        cout << "Program Pertemuan 3 :" << endl;
         cout << "------------------" << endl;
         cout << "1. Kasus 1 : Konversi Nilai Ribuan" << endl;
         cout << "2. Kasus 2 : Operator logika Sederhana" << endl;
         cout << "3. Kasus 3 : Tabel Operator Logika\n" << endl;
+        cout << "------------------" << endl;
         cout << "0. Kembali\n " << endl;
         cout << "Pilih salah satu program : ";
         cin >> pilihan;
