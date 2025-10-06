@@ -15,7 +15,7 @@ int main(){
         cout << "--------------------------------------" << endl;
         cout << "1. Pertemuan 1 : Pengenalan C++" << endl;
         cout << "2. Pertemuan 2 : Tipe Data" << endl;
-        cout << "3. Pertemuan 3 : Variabel dan Logika" << endl;
+        cout << "3. Pertemuan 3 : Variabel dan Logika" << endl; 
         cout << "4. Pertemuan 4 : Analisis If Else\n" << endl;
         cout << "Pilih salah satu pembelajaran C++ : "; cin >> pilihan;
         cout << '\n';
