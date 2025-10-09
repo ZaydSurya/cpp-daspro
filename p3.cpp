@@ -4,13 +4,6 @@
 
 using namespace std;
 
-void dataP3(){
-    cout << "-------------------------------------" << endl;
-    cout << "Pertemuan 3 : Variabel dan Logika C++" << endl;
-    cout << "-------------------------------------" << endl;
-}
-
-
 void kasus1P3(){
     int rib,rat,pul,sat, madRat, madRib, data, rb, rt, pl;
     char pilihan;
@@ -110,7 +103,9 @@ void kasus3P3(){
 
 void sistemP3(){
     int pilihan;
-    dataP3();
+    cout << "-------------------------------------" << endl;
+    cout << "Pertemuan 3 : Variabel dan Logika C++" << endl;
+    cout << "-------------------------------------" << endl;
     do {
         cout << "Program Pertemuan 3 :" << endl;
         cout << "------------------" << endl;

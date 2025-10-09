@@ -5,14 +5,6 @@
 
 using namespace std;
 
-void dataP2(){
-    string nama;
-    cout << "-------------------------------------" << endl;
-    cout << "Pertemuan 2 : Tipe Data" << endl;
-    cout << "-------------------------------------" << endl;
-
-}
-
 void kasus1P2(){
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
@@ -173,7 +165,9 @@ void kasus3P2(){
 void sistemP2(){
     int pilihan;
     string nama;
-    dataP2();
+    cout << "-------------------------------------" << endl;
+    cout << "Pertemuan 2 : Tipe Data" << endl;
+    cout << "-------------------------------------" << endl;
     do{
         cout << "Program Pertemuan 2" << endl;
         cout << "-------------------" << endl;
