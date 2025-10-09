@@ -40,20 +40,44 @@ void kasus1P4(){
 
         if(a>b){
             if(a>0){
-            cout << "/n------Keterangan------" << endl;
-            cout << "Nilai A atau " << a << " lebih besar dari nilai B" << endl;
+            cout << "\n------Keterangan------" << endl;
+            cout << "Nilai A yaitu " << a << " lebih besar dari nilai B " << b << endl;
             cout << "Nilai A adalah Bilangan Positif\n" << endl;
             } else {
-                cout << "Nilai A lebih besar dari B yaitu " << a << " akan tetapi bernilai Negatif" << endl;
+                cout << "Nilai A lebih besar dari B yaitu " << a << " > " << b << " akan tetapi bernilai Negatif" << endl;
                 a = a*-1;
                 cout << "Nilai A sekarang adalah " << a << ". Sekarang nilainya adalah positif\n" << endl;
             }
 
-        } else {
-            cout << "/n------Keterangan------" << endl;
-            cout << "Nilai B atau " << b << " lebih besar dari nilai A" << endl;
+        } else if(a<b){
+            cout << "\n------Keterangan------" << endl;
+            cout << "Nilai B yaitu " << b << " lebih besar dari nilai A " << a << endl;
             cout << "Nilai B adalah Bilangan Positif\n" << endl;
+            if (b>0){
+                cout << "Nilai B lebih besar dari A yaitu " << b << " > " << a << " akan tetapi bernilai negatif" << endl;
+                b = b*-1;
+                cout << "Nilai B sekarang adalah " << b << ". Sekarang nilainya adalah positif\n" << endl;
+            } else if ((b>0) ?? (a>0)){
+                cout << "Nilai B lebih besar dari A yaitu " << b " akan tetapi semua nilai adalah negatif" << endl;
+             }
+        } else {
+            cout << "Input yang dimasukkan tidak valic\n" << endl;
         }
+    };
+
+    auto soal3P4 = [](){
+        cout << "\nProgram Relasional Ekspresi" << endl;
+        cout << "---------------------------" << endl;
+        cout << "Mendeskripsikan hasil Ekspresi" << endl;
+        cout << "* 3 < 4" << endl;
+        cout << "* 12.5 < 7.5" << endl;
+        cout << "* 5 <= 3.14" << endl;
+        cout << "* 3 < False" << endl;
+        cout << "* True == False" << endl;
+        cout << "* True != False" << endl;
+        cout << "* 65 != 'A'\n" << endl;
+
+        if((3<4)?"Nilai 3 < 4 adakah TRUE ":"Nilai 3 < 4 adalah FALSE");
     };
 
     cout << "Program Matematika Sederhana :" << endl;
@@ -61,7 +85,7 @@ void kasus1P4(){
     cout << "Studi Kasus Kondisi Matematika Sederhana" << endl;
     cout << "1. Nilai Positif atau Negatif" << endl;
     cout << "2. Nilai dari Dua Variabel" << endl;
-    cout << "3. Membalikan Nilai [Belum Ada]" << endl;
+    cout << "3. Relasional Ekspresi" << endl;
     cout << "------------------------------" << endl;
     cout << "0. Kembali\n" << endl;
     cout << "Pilih salah satu program : "; cin >> pilihan;
@@ -72,6 +96,9 @@ void kasus1P4(){
         break;
     case 2 :
         soal2P4();
+        break;
+    case 3 :
+        soal3P4();
         break;
     default :
         cout << "Input tidak ditemukan atau tidak valid.\n";
