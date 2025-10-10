@@ -69,6 +69,7 @@ void kasus1P4(){
     };
 
     auto soal3P4 = [](){
+        string a,b,c,d,e,f,g;
         cout << "\nProgram Relasional Ekspresi" << endl;
         cout << "---------------------------" << endl;
         cout << "Mendeskripsikan hasil Ekspresi" << endl;
@@ -80,7 +81,22 @@ void kasus1P4(){
         cout << "* True != False" << endl;
         cout << "* 65 != 'A'\n" << endl;
 
-        if((3<4)?"Nilai 3 < 4 adakah TRUE ":"Nilai 3 < 4 adalah FALSE");
+        a = (3<4)?"BENAR":"SALAH";
+        cout << "Hasil dari 3 < 4 adalah\t\t: " << a << endl;
+        b = (12.5<7.5)?"BENAR":"SALAH";
+        cout << "Hasil dari 12.5 < 7.5 adalah\t: " << b << endl;
+        c = (5<=3.14)?"BENAR":"SALAH";
+        cout << "Hasil dari 5 <= 3.14 adalah\t: " << c << endl;
+        d = (3<false)?"BENAR":"SALAH";
+        cout << "Hasil dari 3 < False adalah\t: " << d << endl;
+        e = (true==false)?"BENAR":"SALAH";
+        cout << "Hasil dari True == False adalah\t: " << e << endl;
+        f = (true!=false)?"BENAR":"SALAH";
+        cout << "Hasil dari True != False adalah\t: " << f << endl;
+        g = (65!='A')?"BENAR":"SALAH";
+        cout << "Hasil dari 65 != 'A' adalah\t: " << g << endl;
+
+        cout << ""
     };
 
     cout << "\nProgram Matematika Sederhana :" << endl;
