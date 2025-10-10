@@ -8,7 +8,7 @@ void kasus1P3(){
     int rib,rat,pul,sat, madRat, madRib, data, rb, rt, pl;
     char pilihan;
     do {
-        cout << "Konversi Nilai Ribuan" << endl;
+        cout << "\nKonversi Nilai Ribuan" << endl;
         cout << "--------------------------------" << endl;
         cout << "Memberikan keterangan pada nilai" << endl;
         cout << "--------------------------------" << endl;
@@ -27,16 +27,9 @@ void kasus1P3(){
         rt = madRib - madRat;
         pl = madRat - sat;
 
-        cout << "Output Keterangan : " << rib << " Ribuan, " << rat << " Ratusan, " << pul << " Puluhan, " << sat << " Satuan." << endl;
-        cout << "Output Nilai : " << rb << ", " << rt << ", " << pl << ", " << sat << ".\n" << endl;
-
+        cout << "Output Keterangan\t: " << rib << " Ribuan, " << rat << " Ratusan, " << pul << " Puluhan, " << sat << " Satuan." << endl;
+        cout << "Output Nilai\t\t: " << rb << ", " << rt << ", " << pl << ", " << sat << ".\n" << endl;
         cout << "Apakah ingin mengulangi lagi? [y/n] : "; cin >> pilihan;
-        cout << '\n';
-        if (pilihan == 'y' || pilihan == 'Y'){
-            cout << "Kamu akan mengulangi program ini\n" << endl;
-        } else if (pilihan == 'n' || pilihan == 'N'){
-            return;
-        }
     } while (pilihan == 'y');
 
 }
@@ -89,15 +82,14 @@ void kasus3P3(){
     cout << "----------------------------------------------" << endl;
     cout << "Menampilkan Tabel Operator Logika True & False" << endl;
     cout << "----------------------------------------------\n" << endl;
-
     cout << "---------------------------------------------------------------" << endl;
     cout << "| a | b | a and b | a or b | not a | not b | a eq b | a neq b |" << endl;
     cout << "---------------------------------------------------------------" << endl;
-
     cout << "| " << a1 << " | " << b1 << " |    " << (a1&&b1) << "    |    " << (a1||b1) << "   |   " << (!a1) << "   |   " << (!b1) << "   |    "  << (a1==b1) << "   |    " << (!a1==b1) << "    |" << endl;
     cout << "| " << a2 << " | " << b2 << " |    " << (a2&&b2) << "    |    " << (a2||b2) << "   |   " << (!a2) << "   |   " << (!b2) << "   |    "  << (a2==b2) << "   |    " << (!a2==b2) << "    |" << endl;
     cout << "| " << a3 << " | " << b3 << " |    " << (a3&&b3) << "    |    " << (a3||b3) << "   |   " << (!a3) << "   |   " << (!b3) << "   |    "  << (a3==b3) << "   |    " << (!a3==b3) << "    |" << endl;
-    cout << "| " << a4 << " | " << b4 << " |    " << (a4&&b4) << "    |    " << (a4||b4) << "   |   " << (!a4) << "   |   " << (!b4) << "   |    "  << (a4==b4) << "   |    " << (!a4==b4) << "    |\n" << endl;
+    cout << "| " << a4 << " | " << b4 << " |    " << (a4&&b4) << "    |    " << (a4||b4) << "   |   " << (!a4) << "   |   " << (!b4) << "   |    "  << (a4==b4) << "   |    " << (!a4==b4) << "    |" << endl;
+    cout << "---------------------------------------------------------------\n" << endl;
 }
 
 
@@ -108,16 +100,13 @@ void sistemP3(){
     cout << "-------------------------------------" << endl;
     do {
         cout << "Program Pertemuan 3 :" << endl;
-        cout << "------------------" << endl;
+        cout << "--------------------------------------" << endl;
         cout << "1. Kasus 1 : Konversi Nilai Ribuan" << endl;
         cout << "2. Kasus 2 : Operator logika Sederhana" << endl;
-        cout << "3. Kasus 3 : Tabel Operator Logika\n" << endl;
-        cout << "------------------" << endl;
+        cout << "3. Kasus 3 : Tabel Operator Logika" << endl;
+        cout << "--------------------------------------" << endl;
         cout << "0. Kembali\n " << endl;
-        cout << "Pilih salah satu program : ";
-        cin >> pilihan;
-        cout << '\n';
-
+        cout << "Pilih salah satu program : "; cin >> pilihan;
         switch (pilihan){
         case 1 :
             kasus1P3();

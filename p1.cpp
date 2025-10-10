@@ -6,28 +6,26 @@
 using namespace std;
 
 void dataP1(){
-    string nama;
-    string jurusan;
-    string univ;
+    string nama,prodi,nim;
 
     cout << "----------------------------" << endl;
     cout << "Pertemuan 1 : Pengenalan C++" << endl;
     cout << "----------------------------" << endl;
     cout << "Mari kita kenalan dulu yuk." << endl;
 
-    cout << "Nama kamu siapa\t : ";
+    cout << "Nama Lengkap\t\t : ";
     getline(cin, nama);
-    cout << "Jurusan apa\t : ";
-    getline(cin, jurusan);
-    cout << "Kuliah dimana\t : ";
-    getline(cin, univ);
+    cout << "Nomor Induk Mahasiswa\t : ";
+    getline(cin, nim);
+    cout << "Program Studi\t\t : ";
+    getline(cin, prodi);
     cout << '\n' << endl;
 
-    cout << "-----------------DATA DIRI-----------------" << endl;
-    cout << "Nama" << '\t' << '\t' << ":" << nama << endl;
-    cout << "Jurusan" << '\t' << '\t' << ":" << jurusan << endl;
-    cout << "Universitas" << '\t' << ":" << univ << endl;
-    cout << "-------------------------------------------\n" << endl;
+    cout << "---------------KARTU MAHASISWA---------------" << endl;
+    cout << "Nama\t: " << nama << endl;
+    cout << "NIM\t: " << nim << endl;
+    cout << "Prodi\t: " << prodi << endl;
+    cout << "----------------------------------------------\n" << endl;
 }
 
 
@@ -37,13 +35,5 @@ void sistemP1(){
         dataP1();
         cout << "Apakah kamu ingin mencoba kembali ? [y/n] "; cin >> pilihan;
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        if (pilihan == 'y'){
-            continue;
-        } else if (pilihan == 'n') {
-            cout << "Apabila akan kembali ke program sebelumnya. Terimakasih :)\n" << endl;
-        } else {
-            cout << "Pilihan tidak valid, Program dihentikan\n" << endl;
-            pilihan = 'x';
-        }
     } while (pilihan == 'y');
 }

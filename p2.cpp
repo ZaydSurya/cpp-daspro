@@ -45,47 +45,61 @@ void kasus2P2(){
 
     auto soal1P2 = [](){
         int y, a;
-        cout << "Menyelesaikan soal Nomor 1" << endl;
-        cout << "y = a^3 + 7" << endl << '\n';
-        cout << "Masukkan nilai a : "; cin >> a;
-        cout << '\n';
+        char pilihan;
+        do {
+            cout << "\n------------" << endl;
+            cout << "Soal Nomor 1" << endl;
+            cout << "------------" << endl;
+            cout << "y = a^3 + 7\n" << endl;
+            cout << "Masukkan nilai a : "; cin >> a;
+            y = (a*a*a) + 7;
+            cout << "------------------------------" << endl;
+            cout << "Hasil nilai Y adalah : " << y << endl;
+            cout << "------------------------------\n" << endl;
+            cout << "Apakah kamu ingin mengulanginya lagi ? [y/n] ";cin >> pilihan;
+            cout << '\n';
+        } while ((pilihan == 'y') || (pilihan == 'Y'));
 
-        y = (a*a*a) + 7;
-
-        cout << "Hasil dari soal nomor 1 adalah : " << y << endl << '\n';
     };
 
     auto soal2P2 = [](){
         int y,a,b,c,x;
-        cout << "Menyelesaikan soal Nomor 2" << endl;
-        cout << "y = ax^2 + bx + c" << endl;
-        cout << "Masukkan nilai x : "; cin >> x;
-        cout << "Masukkan nilai a : "; cin >> a;
-        cout << "Masukkan nilai b : "; cin >> b;
-        cout << "Masukkan nilai c : "; cin >> c;
-        cout << '\n';
-
-        y = a*(x*x) + b*x + c;
-
-        cout << "Hasil dari soal nomor 2 adalah : " << y << endl << '\n';
+        char pilihan;
+        do {
+            cout << "\n------------" << endl;
+            cout << "Soal Nomor 2" << endl;
+            cout << "------------" << endl;
+            cout << "y = ax^2 + bx + c\n" << endl;
+            cout << "Masukkan nilai x : "; cin >> x;
+            cout << "Masukkan nilai a : "; cin >> a;
+            cout << "Masukkan nilai b : "; cin >> b;
+            cout << "Masukkan nilai c : "; cin >> c;
+            y = a*(x*x) + b*x + c;
+            cout << "------------------------------" << endl;
+            cout << "Hasil nilai Y adalah : " << y << endl;
+            cout << "------------------------------\n" << endl;
+            cout << "Apakah kamu ingin mengulanginya lagi ? [y/n] ";cin >> pilihan;
+            cout << '\n';
+        } while ((pilihan == 'y') || (pilihan == 'Y'));
     };
 
     int pilihan;
     cout << "Program mencari nilai Y dari Persamaan" << endl;
+    cout << "--------------------" << endl;
     cout << "1. y = a^3 + 7" << endl;
     cout << "2. y = ax^2 + bx + c" << endl;
+    cout << "--------------------" << endl;
     cout << "Pilih salah satu soal untuk diselesaikan : "; cin >> pilihan;
     cout << '\n';
-
     switch (pilihan){
-    case 1:
-        soal1P2();
-        break;
-    case 2 :
-        soal2P2();
-        break;
-    default :
-        cout << "Tidak Valid";
+        case 1:
+            soal1P2();
+            break;
+        case 2 :
+            soal2P2();
+            break;
+        default :
+            cout << "Tidak Valid\n" << endl;
     }
 
 }
@@ -95,7 +109,9 @@ void kasus3P2(){
     int pilihan;
     char coba;
     do {
+        cout << "---------------------" << endl;
         cout << "Program Konversi Suhu" << endl;
+        cout << "---------------------" << endl;
         cout << "1. Celcius" << endl;
         cout << "2. Fahrenheit" << endl;
         cout << "3. Kelvin" << endl;
@@ -145,20 +161,13 @@ void kasus3P2(){
             cout << "Konversi suhu ke Celcius adalah\t\t: " << c << endl;
             cout << "Konversi suhu ke Fahrenheit adalah\t: " << f << endl;
             cout << "Konversi suhu ke Kelvin adalah\t\t: " << k << endl << '\n';
-        } else if (pilihan == 0) {
-            //
         } else {
-            cout << "Input tidak ditemukan atau tidak valid\n" << endl;
+            cout << "Kamu akan kembali\n" << endl;
         }
 
         cout << "Apakah ingin melanjutkannya? [y/n] : "; cin >> coba;
-        if (coba == 'y'){
-            cout << "Kamu akan kembali ke suhu Awal\n" << endl;
-        } else if (coba == 'n'){
-            //
-        }
-
-    } while (coba == 'y');
+        cout << '\n';
+    } while ((coba == 'y') || (coba == 'Y'));
 
 }
 
@@ -170,11 +179,11 @@ void sistemP2(){
     cout << "-------------------------------------" << endl;
     do{
         cout << "Program Pertemuan 2" << endl;
-        cout << "-------------------" << endl;
+        cout << "-------------------------------------------" << endl;
         cout << "1. Kasus 1 : Aritmatika dengan Operator" << endl;
         cout << "2. Kasus 2 : Mencari Nilai Y dari Persamaan" << endl;
         cout << "3. Kasus 3 : Konversi Suhu Celcius" << endl;
-        cout << "-------------------" << endl;
+        cout << "-------------------------------------------" << endl;
         cout << "0. Kembali\n " << endl;
         cout << "Pilih salah satu kasus : "; cin >> pilihan;
         cout << '\n';

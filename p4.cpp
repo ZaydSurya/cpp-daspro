@@ -10,7 +10,8 @@ void kasus1P4(){
         char pilihan;
         double a;
         do {
-            cout << "\nProgram Nilai Positif (+) dan Negatif (-)" << endl;
+            cout << "\n-----------------------------------------" << endl;
+            cout << "Program Nilai Positif (+) dan Negatif (-)" << endl;
             cout << "-----------------------------------------" << endl;
             cout << "Konversikan nilai integer atau angka ke dalam Positif\n" << endl;
             cout << "Masukkan nilai : "; cin >> a;
@@ -27,14 +28,14 @@ void kasus1P4(){
             }
             cout << "Apakah kamu ingin mengulangi kembali? [y/n] : "; cin >> pilihan;
         } while ((pilihan == 'y') || (pilihan == 'Y'));
-
     };
 
     auto soal2P4 = [](){
         double a,b;
         char pilihan;
         do {
-            cout << "\nProgram Nilai Variabel" << endl;
+            cout << "\n----------------------" << endl;
+            cout << "Program Nilai Variabel" << endl;
             cout << "----------------------" << endl;
             cout << "Masukkan nilai A : "; cin >> a;
             cout << "Masukkan Nilai B : "; cin >> b;
@@ -70,7 +71,8 @@ void kasus1P4(){
 
     auto soal3P4 = [](){
         string a,b,c,d,e,f,g;
-        cout << "\nProgram Relasional Ekspresi" << endl;
+        cout << "\n---------------------------" << endl;
+        cout << "Program Relasional Ekspresi" << endl;
         cout << "---------------------------" << endl;
         cout << "Mendeskripsikan hasil Ekspresi" << endl;
         cout << "* 3 < 4" << endl;
@@ -95,16 +97,14 @@ void kasus1P4(){
         cout << "Hasil dari True != False adalah\t: " << f << endl;
         g = (65!='A')?"BENAR":"SALAH";
         cout << "Hasil dari 65 != 'A' adalah\t: " << g << endl;
-
-        cout << ""
     };
-
-    cout << "\nProgram Matematika Sederhana :" << endl;
+    cout << "\n------------------------------" << endl;
+    cout << "Program Matematika Sederhana :" << endl;
     cout << "------------------------------" << endl;
     cout << "1. Nilai Positif atau Negatif" << endl;
     cout << "2. Nilai dari Dua Variabel" << endl;
     cout << "3. Relasional Ekspresi" << endl;
-    cout << "------------------------------" << endl;
+    cout << "--------------------------------" << endl;
     cout << "0. Kembali\n" << endl;
     cout << "Pilih salah satu program : "; cin >> pilihan;
 
@@ -129,7 +129,8 @@ void kasus2P4(){
     char pilihan;
     string nama, nim;
     do {
-        cout << "\nProgram Nilai Raport" << endl;
+        cout << "\n--------------------" << endl;
+        cout << "Program Nilai Raport" << endl;
         cout << "--------------------" << endl;
         cin.ignore(numeric_limits<streamsize>::max(),'\n');
         cout << "Nama Lengkap\t: "; getline(cin,nama);
@@ -188,19 +189,18 @@ void sistemP4(){
     cout << "-------------------------------------" << endl;
     cout << "Pertemuan 4 : Analisis Kondisi IF ELSE" << endl;
     cout << "-------------------------------------" << endl;
-        do{
-            cout << "\nProgram Pertemuan 4 :" << endl;
-            cout << "------------------" << endl;
-            cout << "1. Kasus 1 : Kondisi Matematika Sederhana" << endl;
-            cout << "2. Kasus 2 : Penilaian Raport Siswa" << endl;
-            cout << "3. Kasus 3 : Upah Lembur Kayawan" << endl;
-            cout << "------------------" << endl;
-            cout << "0. Kembali\n " << endl;
-            cout << "Pilih salah satu program : "; cin >> pilihan;
-            cout << '\n';
+    do{
+        cout << "\nProgram Pertemuan 4 :" << endl;
+        cout << "-----------------------------------------" << endl;
+        cout << "1. Kasus 1 : Kondisi Matematika Sederhana" << endl;
+        cout << "2. Kasus 2 : Penilaian Raport Siswa" << endl;
+        cout << "3. Kasus 3 : Upah Lembur Kayawan" << endl;
+        cout << "-----------------------------------------" << endl;
+        cout << "0. Kembali\n " << endl;
+        cout << "Pilih salah satu program : "; cin >> pilihan;
+        cout << '\n';
 
-            switch (pilihan)
-            {
+        switch (pilihan){
             case 1:
                 kasus1P4();
                 break;
@@ -211,7 +211,6 @@ void sistemP4(){
                 kasus3P4();
             default:
                 break;
-            }
-
-        } while (pilihan != 0);
+        }
+    } while (pilihan != 0);
 }
