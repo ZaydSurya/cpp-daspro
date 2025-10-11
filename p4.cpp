@@ -7,26 +7,35 @@ using namespace std;
 void kasus1P4(){
     int pilihan;
     auto soal1P4 = [](){
-        char pilihan;
+        char pilihan,konversi;
         double a;
         do {
-            cout << "\n-----------------------------------------" << endl;
+            cout << "-----------------------------------------" << endl;
             cout << "Program Nilai Positif (+) dan Negatif (-)" << endl;
             cout << "-----------------------------------------" << endl;
-            cout << "Konversikan nilai integer atau angka ke dalam Positif\n" << endl;
+            cout << "Menampilkan bilangan positif atau negatif\n" << endl;
             cout << "Masukkan nilai : "; cin >> a;
+            cout << '\n';
             if (a<0){
-                a = a * -1;
-                cout << "---JAWABAN---" << endl;
-                cout << "Nilai kamu akan dikonversikan ke bilangan positif" << endl;
+                cout << "----------JAWABAN--------" << endl;
+                cout << "Nilai kamu adalah NEGATIF" << endl;
                 cout << "Hasil akhir : " << a << endl;
+                cout << "\nApakah kamu ingin mengkonversikan bilangan ke bilangan positif [y/n] : "; cin >> konversi;
+                do {
+                    a = a * -1;
+                    cout << "Nilai sekarang adalah POSITIF" << endl;
+                    cout << "Hasil akhir : " << a << endl;
+                } while((konversi == 'y') || (konversi=='Y'));
                 cout << '\n' << endl;
             } else if (a>=0){
-                cout << "Nilai kamu adalah : " << a << " Bilangin ini adalah bernilai positif" << endl;
+                cout << "----------JAWABAN--------" << endl;
+                cout << "Nilai kamu adalah POSITIF" << endl;
+                cout << "Hasil akhir : " << a << endl;
             } else {
                 cout << "Input tidak valid, coba ulangi kembali.\n" << endl;
             }
             cout << "Apakah kamu ingin mengulangi kembali? [y/n] : "; cin >> pilihan;
+            cout << '\n';
         } while ((pilihan == 'y') || (pilihan == 'Y'));
     };
 
@@ -34,44 +43,34 @@ void kasus1P4(){
         double a,b;
         char pilihan;
         do {
-            cout << "\n----------------------" << endl;
-            cout << "Program Nilai Variabel" << endl;
-            cout << "----------------------" << endl;
+            cout << "-----------------------------" << endl;
+            cout << "Program Nilai Maksimal Variabel" << endl;
+            cout << "-------------------------------" << endl;
             cout << "Masukkan nilai A : "; cin >> a;
             cout << "Masukkan Nilai B : "; cin >> b;
 
             if(a>b){
-                if(a>0){
                 cout << "\n------Keterangan------" << endl;
-                cout << "Nilai A yaitu " << a << " lebih besar dari nilai B " << b << endl;
-                cout << "Nilai A adalah Bilangan Positif\n" << endl;
-                } else {
-                    cout << "Nilai A lebih besar dari B yaitu " << a << " > " << b << " akan tetapi bernilai Negatif" << endl;
-                    a = a*-1;
-                    cout << "Nilai A sekarang adalah " << a << ". Sekarang nilainya adalah positif\n" << endl;
-                }
-
+                cout << "Nilai A yaitu " << a << " lebih besar dari nilai B yaitu " << b << endl;
             } else if(a<b){
                 cout << "\n------Keterangan------" << endl;
-                cout << "Nilai B yaitu " << b << " lebih besar dari nilai A " << a << endl;
-                cout << "Nilai B adalah Bilangan Positif\n" << endl;
-                if (b>0){
-                    cout << "Nilai B lebih besar dari A yaitu " << b << " > " << a << " akan tetapi bernilai negatif" << endl;
-                    b = b*-1;
-                    cout << "Nilai B sekarang adalah " << b << ". Sekarang nilainya adalah positif\n" << endl;
-                } else if ((b>0) && (a>0)){
-                    cout << "Nilai B lebih besar dari A yaitu " << b << " akan tetapi semua nilai adalah negatif" << endl;
-                 }
+                cout << "Nilai B yaitu " << b << " lebih besar dari nilai A yaitu " << a << endl;
+            } else if (a==b){
+                cout << "\n------Keterangan------" << endl;
+                cout << "Nilai A yaitu " << a << " sama besar nya dengan nilai B yaitu " << b << endl;
             } else {
                 cout << "Input yang dimasukkan tidak valid\n" << endl;
             }
+
+
             cout << "Apakah kamu ingin mengulangi lagi? [y/n] : "; cin >> pilihan;
+            cout << '\n';
         } while ((pilihan == 'y') || (pilihan == 'Y'));
     };
 
     auto soal3P4 = [](){
         string a,b,c,d,e,f,g;
-        cout << "\n---------------------------" << endl;
+        cout << "---------------------------" << endl;
         cout << "Program Relasional Ekspresi" << endl;
         cout << "---------------------------" << endl;
         cout << "Mendeskripsikan hasil Ekspresi" << endl;
@@ -98,7 +97,7 @@ void kasus1P4(){
         g = (65!='A')?"BENAR":"SALAH";
         cout << "Hasil dari 65 != 'A' adalah\t: " << g << endl;
     };
-    cout << "\n------------------------------" << endl;
+    cout << "------------------------------" << endl;
     cout << "Program Matematika Sederhana :" << endl;
     cout << "------------------------------" << endl;
     cout << "1. Nilai Positif atau Negatif" << endl;
@@ -147,6 +146,7 @@ void kasus2P4(){
             cout << "------------------------------------------------------------------------------------\n" << endl;
         }
         cout << "Apakah kamu ingin mengulangi nya lagi? [y/n] : "; cin >> pilihan;
+        cout << '\n';
     } while ((pilihan == 'y') || (pilihan == 'Y'));
 
 }
@@ -181,6 +181,7 @@ void kasus3P4(){
         cout << "Upah Kerja selama " << jam << " jam, adalah Rp." << total << endl;
         cout << "--------------------------------------------\n" << endl;
         cout << "Apakah kamu ingin mengulangi nya lagi? [y/n] : "; cin >> pilihan;
+        cout << '\n';
     } while ((pilihan == 'y') || (pilihan == 'Y'));
 }
 
@@ -190,7 +191,7 @@ void sistemP4(){
     cout << "Pertemuan 4 : Analisis Kondisi IF ELSE" << endl;
     cout << "-------------------------------------" << endl;
     do{
-        cout << "\nProgram Pertemuan 4 :" << endl;
+        cout << "Program Pertemuan 4 :" << endl;
         cout << "-----------------------------------------" << endl;
         cout << "1. Kasus 1 : Kondisi Matematika Sederhana" << endl;
         cout << "2. Kasus 2 : Penilaian Raport Siswa" << endl;

@@ -28,7 +28,6 @@ void dataP1(){
     cout << "----------------------------------------------\n" << endl;
 }
 
-
 void sistemP1(){
     char pilihan;
     do {

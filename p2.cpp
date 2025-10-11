@@ -36,13 +36,9 @@ void kasus1P2(){
         }
         cout << "Apakah ingin mengulangi program? [y/n] : "; cin >> pilihan;
     } while (pilihan == 'y');
-
-
-
 }
 
 void kasus2P2(){
-
     auto soal1P2 = [](){
         int y, a;
         char pilihan;
@@ -59,7 +55,6 @@ void kasus2P2(){
             cout << "Apakah kamu ingin mengulanginya lagi ? [y/n] ";cin >> pilihan;
             cout << '\n';
         } while ((pilihan == 'y') || (pilihan == 'Y'));
-
     };
 
     auto soal2P2 = [](){
@@ -187,7 +182,6 @@ void sistemP2(){
         cout << "0. Kembali\n " << endl;
         cout << "Pilih salah satu kasus : "; cin >> pilihan;
         cout << '\n';
-
         switch(pilihan){
             case 1:
                 kasus1P2();

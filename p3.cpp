@@ -21,7 +21,7 @@ void kasus1P3(){
         rat = madRib / 100; // Ketemunya 2,34
         madRat = madRib % 100; // ketemunya 34
         pul = madRat / 10; // ketemunya 3,4
-        sat = madRat % 10;
+        sat = madRat % 10; // ketemunya 4
 
         rb = data - madRib;
         rt = madRib - madRat;
