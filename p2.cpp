@@ -7,7 +7,6 @@ using namespace std;
 
 void kasus1P2(){
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
     double a,b;
     char pilihan;
     string operasi;
@@ -159,7 +158,6 @@ void kasus3P2(){
         } else {
             cout << "Kamu akan kembali\n" << endl;
         }
-
         cout << "Apakah ingin melanjutkannya? [y/n] : "; cin >> coba;
         cout << '\n';
     } while ((coba == 'y') || (coba == 'Y'));

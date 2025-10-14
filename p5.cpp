@@ -9,7 +9,7 @@ void kasus1P5(){
     auto soal1P5 = [](){
         int nilai;
         char pilihan;
-        cout << "/nProgram Konversi Nilai" << endl;
+        cout << "\nProgram Konversi Nilai" << endl;
         cout << "------------------------" << endl;
         do{
             cout << "Tabel Ranking Nilai" << endl;

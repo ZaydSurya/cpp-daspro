@@ -61,8 +61,6 @@ void kasus1P4(){
             } else {
                 cout << "Input yang dimasukkan tidak valid\n" << endl;
             }
-
-
             cout << "Apakah kamu ingin mengulangi lagi? [y/n] : "; cin >> pilihan;
             cout << '\n';
         } while ((pilihan == 'y') || (pilihan == 'Y'));
