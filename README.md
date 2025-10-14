@@ -19,10 +19,10 @@ Memberikan pengenalan terhadap **fundamental bahasa pemrograman C++** melalui co
 Setiap file pertemuan disusun seperti berikut:
 ```
 ├── p1/   → Pertemuan 1: Pengenalan C++
-├── p2/   → Pertemuan 2: Variabel & Input Output
-├── p3/   → Pertemuan 3: Kondisi (if, switch)
-├── p4/   → Pertemuan 4: Perulangan (for, while)
-├── p5/   → Pertemuan 5: Fungsi & Implementasi
+├── p2/   → Pertemuan 2: Tipe Data
+├── p3/   → Pertemuan 3: Variabel dan Logika
+├── p4/   → Pertemuan 4: Analisis If Else
+├── p5/   → Pertemuan 5: Analisis Kondisi Lanjutan
 ├── p6/   → Pertemuan 6: Perulangan atau Looping
 └── main.cpp  → File utama proyek
 ```
