@@ -1,0 +1,31 @@
+# 📘 Fundamental Dasar C++
+
+Proyek ini berisi kumpulan latihan untuk memahami **dasar-dasar pemrograman C++**. Setiap file (p1, p2, p3, dst.) mewakili pertemuan atau topik tertentu dalam pembelajaran C++ — mulai dari penggunaan variabel, fungsi, hingga struktur dasar logika.
+
+## 🧠 Tujuan
+Memberikan pengenalan terhadap **fundamental bahasa pemrograman C++** melalui contoh sederhana yang dapat langsung dijalankan menggunakan **Code::Blocks** atau compiler C++ lainnya.
+
+## ⚙️ Cara Menggunakan
+
+1. **Siapkan Code Editor & Compiler**
+   - Unduh **Code::Blocks** (disarankan): [https://www.codeblocks.org/downloads/](https://www.codeblocks.org/downloads/)
+   - Alternatif compiler (MinGW): [https://sourceforge.net/projects/mingw/](https://sourceforge.net/projects/mingw/)
+
+2. **Buka & Jalankan Proyek**
+   - Buka file `.cbp` melalui Code::Blocks
+   - Tekan **Build and Run (F9)** untuk menjalankan program
+
+## 🗂️ Struktur Folder
+Setiap file pertemuan disusun seperti berikut:
+```
+├── p1/   → Pertemuan 1: Pengenalan C++
+├── p2/   → Pertemuan 2: Variabel & Input Output
+├── p3/   → Pertemuan 3: Kondisi (if, switch)
+├── p4/   → Pertemuan 4: Perulangan (for, while)
+├── p5/   → Pertemuan 5: Fungsi & Implementasi
+├── p6/   → Pertemuan 6: Perulangan atau Looping
+└── main.cpp  → File utama proyek
+```
+
+## 💡 Catatan
+Proyek ini cocok digunakan untuk **semua kalangan** yang ingin memahami logika dasar dan struktur kode C++ sebelum berlanjut ke konsep OOP atau algoritma lanjutan.
