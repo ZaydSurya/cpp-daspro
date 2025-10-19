@@ -24,6 +24,7 @@ Setiap file pertemuan disusun seperti berikut:
 ├── p4/   → Pertemuan 4: Analisis If Else
 ├── p5/   → Pertemuan 5: Analisis Kondisi Lanjutan
 ├── p6/   → Pertemuan 6: Perulangan atau Looping
+├── p7/   → Pertemuan 7: Nested Looping (Bersarang)
 └── main.cpp  → File utama proyek
 ```
 
