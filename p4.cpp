@@ -190,11 +190,11 @@ void sistemP4(){
     cout << "-------------------------------------" << endl;
     do{
         cout << "Program Pertemuan 4 :" << endl;
-        cout << "-----------------------------------------" << endl;
-        cout << "1. Kasus 1 : Kondisi Matematika Sederhana" << endl;
-        cout << "2. Kasus 2 : Penilaian Raport Siswa" << endl;
-        cout << "3. Kasus 3 : Upah Lembur Kayawan" << endl;
-        cout << "-----------------------------------------" << endl;
+        cout << "-------------------------------" << endl;
+        cout << "1. Kondisi Matematika Sederhana" << endl;
+        cout << "2. Penilaian Raport Siswa" << endl;
+        cout << "3. Upah Lembur Kayawan" << endl;
+        cout << "-------------------------------" << endl;
         cout << "0. Kembali\n " << endl;
         cout << "Pilih salah satu program : "; cin >> pilihan;
         cout << '\n';

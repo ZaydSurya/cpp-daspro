@@ -172,11 +172,11 @@ void sistemP2(){
     cout << "-------------------------------------" << endl;
     do{
         cout << "Program Pertemuan 2" << endl;
-        cout << "-------------------------------------------" << endl;
-        cout << "1. Kasus 1 : Aritmatika dengan Operator" << endl;
-        cout << "2. Kasus 2 : Mencari Nilai Y dari Persamaan" << endl;
-        cout << "3. Kasus 3 : Konversi Suhu Celcius" << endl;
-        cout << "-------------------------------------------" << endl;
+        cout << "---------------------------------" << endl;
+        cout << "1. Aritmatika dengan Operator" << endl;
+        cout << "2. Mencari Nilai Y dari Persamaan" << endl;
+        cout << "3. Konversi Suhu Celcius" << endl;
+        cout << "---------------------------------" << endl;
         cout << "0. Kembali\n " << endl;
         cout << "Pilih salah satu kasus : "; cin >> pilihan;
         cout << '\n';

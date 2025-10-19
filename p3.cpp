@@ -100,11 +100,11 @@ void sistemP3(){
     cout << "-------------------------------------" << endl;
     do {
         cout << "Program Pertemuan 3 :" << endl;
-        cout << "--------------------------------------" << endl;
-        cout << "1. Kasus 1 : Konversi Nilai Ribuan" << endl;
-        cout << "2. Kasus 2 : Operator logika Sederhana" << endl;
-        cout << "3. Kasus 3 : Tabel Operator Logika" << endl;
-        cout << "--------------------------------------" << endl;
+        cout << "----------------------------" << endl;
+        cout << "1. Konversi Nilai Ribuan" << endl;
+        cout << "2. Operator logika Sederhana" << endl;
+        cout << "3. Tabel Operator Logika" << endl;
+        cout << "----------------------------" << endl;
         cout << "0. Kembali\n " << endl;
         cout << "Pilih salah satu program : "; cin >> pilihan;
         switch (pilihan){

@@ -1,8 +1,7 @@
+#ifndef P6_H
+#define P6_H
 
-#ifndef P5_H
-#define P5_H
-
-void sistemP5();
+void sistemP6();
 
 #endif
 

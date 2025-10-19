@@ -5,6 +5,7 @@
 #include "p4.h"
 #include "p5.h"
 #include "p6.h"
+#include "p7.h"
 #include <limits>
 
 using namespace std;
@@ -20,7 +21,8 @@ int main(){
         cout << "3. Pertemuan 3 : Variabel dan Logika" << endl;
         cout << "4. Pertemuan 4 : Analisis If Else" << endl;
         cout << "5. Pertemuan 5 : Analisis Kondisi Advanced" << endl;
-        cout << "6. Pertemuan 6 : Looping For While Do\n" << endl;
+        cout << "6. Pertemuan 6 : Looping For While Do" << endl;
+        cout << "7. Pertemuan 7 : Nested Looping\n" << endl;
         cout << "Pilih salah satu pembelajaran C++ : "; cin >> pilihan;
         cout << '\n';
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -42,6 +44,9 @@ int main(){
                 break;
             case 6 :
                 sistemP6();
+                break;
+            case 7 :
+                sistemP7();
                 break;
             default :
                 cout << "Input Tidak Valid, Program dihentikan";

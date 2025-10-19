@@ -605,11 +605,11 @@ void sistemP5(){
     cout << "---------------------------------------" << endl;
         do{
             cout << "Program Pertemuan 5 :" << endl;
-            cout << "----------------------------------------" << endl;
-            cout << "1. Kasus 1 : Konversi & Keterangan Nilai" << endl;
-            cout << "2. Kasus 2 : Biaya Parkir" << endl;
-            cout << "3. Kasus 3 : Diskon Produk" << endl;
-            cout << "----------------------------------------" << endl;
+            cout << "------------------------------" << endl;
+            cout << "1. Konversi & Keterangan Nilai" << endl;
+            cout << "2. Biaya Parkir" << endl;
+            cout << "3. Diskon Produk" << endl;
+            cout << "------------------------------" << endl;
             cout << "0. Kembali\n " << endl;
             cout << "Pilih salah satu program : "; cin >> pilihan;
 

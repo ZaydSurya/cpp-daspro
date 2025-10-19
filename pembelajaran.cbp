@@ -47,6 +47,8 @@
 		<Unit filename="p5.h" />
 		<Unit filename="p6.cpp" />
 		<Unit filename="p6.h" />
+		<Unit filename="p7.cpp" />
+		<Unit filename="p7.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
