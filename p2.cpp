@@ -99,7 +99,7 @@ void kasus2P2(){
 }
 
 void kasus3P2(){
-    float c,f,k,r;
+    double c,f,k,r;
     int pilihan;
     char coba;
     do {

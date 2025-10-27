@@ -6,8 +6,9 @@ using namespace std;
 
 void kasus1P4(){
     int pilihan;
-    auto soal1P4 = [](){
-        char pilihan,konversi;
+    char ulangi;
+    auto soal1P4 = [&](){
+        char konversi;
         double a;
         do {
             cout << "-----------------------------------------" << endl;
@@ -25,7 +26,7 @@ void kasus1P4(){
                     a = a * -1;
                     cout << "Nilai sekarang adalah POSITIF" << endl;
                     cout << "Hasil akhir : " << a << endl;
-                } while((konversi == 'y') || (konversi=='Y'));
+                } while((ulangi == 'y') || (ulangi=='Y'));
                 cout << '\n' << endl;
             } else if (a>=0){
                 cout << "----------JAWABAN--------" << endl;
@@ -34,14 +35,14 @@ void kasus1P4(){
             } else {
                 cout << "Input tidak valid, coba ulangi kembali.\n" << endl;
             }
-            cout << "Apakah kamu ingin mengulangi kembali? [y/n] : "; cin >> pilihan;
+            cout << "Apakah kamu ingin mengulangi kembali? [y/n] : "; cin >> ulangi;
+            cin.ignore(numeric_limits<streamsize>::max(),'\n');
             cout << '\n';
-        } while ((pilihan == 'y') || (pilihan == 'Y'));
+        } while ((ulangi == 'y') || (ulangi == 'Y'));
     };
 
-    auto soal2P4 = [](){
+    auto soal2P4 = [&](){
         double a,b;
-        char pilihan;
         do {
             cout << "-----------------------------" << endl;
             cout << "Program Nilai Maksimal Variabel" << endl;
@@ -61,9 +62,9 @@ void kasus1P4(){
             } else {
                 cout << "Input yang dimasukkan tidak valid\n" << endl;
             }
-            cout << "Apakah kamu ingin mengulangi lagi? [y/n] : "; cin >> pilihan;
+            cout << "Apakah kamu ingin mengulangi lagi? [y/n] : "; cin >> ulangi;
             cout << '\n';
-        } while ((pilihan == 'y') || (pilihan == 'Y'));
+        } while ((ulangi == 'y') || (ulangi == 'Y'));
     };
 
     auto soal3P4 = [](){
@@ -151,9 +152,9 @@ void kasus2P4(){
 
 void kasus3P4(){
     int jam,upah,reguler, total;
+    upah = 20000;
     double over;
     string nama;
-    upah = 20000;
     char pilihan;
     do{
         cout << "Program Upah Karyawan" << endl;

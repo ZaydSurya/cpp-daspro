@@ -117,7 +117,6 @@ void kasus3P7(){
             cout << endl;
         }
     };
-
     auto soal2P7 = [](){
         cout << "\nNested For - Menurun" << endl;
         cout << "----------------------" << endl;
@@ -128,7 +127,6 @@ void kasus3P7(){
             cout << endl;
         }
     };
-
     auto soal3P7 = [](){
         cout << "\nNested Loop Star" << endl;
         cout << "------------------" << endl;
@@ -167,11 +165,26 @@ void kasus3P7(){
             cout << endl;
         }
     };
+    auto soal6P7 = [](){
+        int x,y;
+        cout << "\nTabel Perkalian" << endl;
+        cout << "-----------------" << endl;
+        cout << "Masukkan berapa baris [x] :  "; cin >> x;
+        cout << "Masukkan berapa kolom [y] :  "; cin >> y;
+        cout << '\n';
+        for(int i=1; i<=x; i++){
+            for(int j=1; j<=y; j++){
+                cout << (i*j) << " ";
+            }
+            cout << '\n';
+        }
+    };
     soal1P7();
     soal2P7();
     soal3P7();
     soal4P7();
     soal5P7();
+    soal6P7();
 }
 
 void sistemP7(){
