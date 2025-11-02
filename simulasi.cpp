@@ -1,281 +1,140 @@
+#include "simulasi.h"
 #include <iostream>
 #include <limits>
-#include "simulasi.h"
 
 using namespace std;
 
 void soal1(){
-    char merk, motor, eksekusi, restart;
-    int total, kembalian, nominal;
-    int harga;
+    string nama, merk;
+    char motor, pilihan, restart;
+    int kembalian, total, harga;
     do{
-        cout << "\nStudi Kasus 1 | Dealer Motor Indonesia" << endl;
-        cout << "----------------------------------------" << endl;
-        cout << "Cari motor baru dengan harga terbaik? Di Motor Gemilang, semua bisa! Mulai dari motor irit sampai yang penuh gaya — semua siap jalan bersama Anda!\n" << endl;
-        cout << "Mau cari motor apa nih, Yamaha? atau Honda? [Y/y | H/h] : "; cin >> motor;
-        if((motor == 'H') || (motor == 'h')){
-            cout << "\nList Motor Honda di Motor Gemilang" << endl;
-            cout << "1. Supra X 125 [S/s]" << endl;
-            cout << "2. Megapro [M/m]" << endl;
-            cout << "3. Tiger [T/t]\n" << endl;
-            cout << "Apa yang kamu ingin lihat : "; cin >> merk;
-            if((merk == 'S') || (merk == 's')){
-                total = 15000000;
-                cout << "-----------------------------" << endl;
-                cout << "Motor Supra X 125" << endl;
-                cout << "Rp. " << total << endl;
-                cout << "-----------------------------" << endl;
-                cout << "Apakah kamu tertarik [y/n] : "; cin >> eksekusi;
-                if(eksekusi == 'n'){
-                    continue;
+        cout << "\nProgram Dealer Motor Indonesia\n" << endl;
+        cout << "---------------------------------------------" << endl;
+        cout << "DEALER MOTOR INDONESIA | MURAH DAN TERPERCAYA" << endl;
+        cout << "---------------------------------------------" << endl;
+        cout << "Jl. Jenderal Sudirman No.320B, Salamanmloyo, 50145" << endl;
+        cout << "---------------------------------------------------" << endl;
+        cout << "1. Honda\t: Supra X 125, Megapro, Tiger" << endl;
+        cout << "2. Yamaha\t: Jupiter, Mio, Vixion\n" << endl;
+        cout << "Pilih salah satu Merk motor [H/h/Y/y] : "; cin >> merk;
+        do{
+            if((merk=="h") || (merk=="H") || (merk == "Honda")){
+                merk = "Honda";
+                cout << "\nDealer Motor | Motor Honda" << endl;
+                cout << "---------------------------" << endl;
+                cout << "1. Motor Supra X 125 [S/s]" << endl;
+                cout << "2. Motor Megapro [M/m]" << endl;
+                cout << "3. Motor Tiger [T/t]" << endl;
+                cout << "4. Kembali [0]\n" << endl;
+                cout << "Pilih salah satu motor : "; cin >> motor;
+                if((motor == 'S') || (motor == 's')){
+                    nama = "Supra X 125";
+                    harga = 15000000;
+                } else if ((motor == 'M') || (motor == 'm')){
+                    nama = "Megapro";
+                    harga = 18000000;
+                } else if ((motor == 'T') || (motor == 't')){
+                    nama = "Tiger";
+                    harga = 25000000;
+                } else if (motor == '0') {
+                    break;
                 } else {
-                    cout << endl;
-                    cout << "Harga [Supra X 125]\t: Rp. " << total << endl;
-                    cout << "Pajak 10%\t\t: Rp. " << (harga = total * (10.0/100.0)) << endl;
-                    cout << "--------------------------------------------" << endl;
-                    cout << "Total Pembayaran\t: Rp. " << (total = total + harga) << endl;
-                    do{
-                        cout << "\nMasukkan nominal kamu\t: Rp. "; cin >> nominal;
-                        if(nominal<total){
-                            cout << "Uang tidak cukup!\t: Rp. " << (total-nominal) << endl;
-                        } else {
-                            cout << "Kembalian\t\t: Rp. " << (kembalian = nominal-total) << endl;
-                        }
-                    }while(nominal<total);
+                    nama = "Tidak ada";
+                    harga = 0;
                 }
-            } else if((merk == 'M') || (merk == 'm')){
-                total = 18000000;
-                cout << "-----------------------------" << endl;
-                cout << "Motor Megapro" << endl;
-                cout << "Rp. " << total << endl;
-                cout << "-----------------------------" << endl;
-                cout << "Apakah kamu tertarik [y/n] : "; cin >> eksekusi;
-                if(eksekusi == 'n'){
-                    continue;
-                } else {
-                    cout << endl;
-                    cout << "Harga [Megapro]\t\t: Rp. " << total << endl;
-                    cout << "Pajak 10%\t\t: Rp. " << (harga = total * (10.0/100.0)) << endl;
-                    cout << "--------------------------------------------" << endl;
-                    cout << "Total Pembayaran\t: Rp. " << (total = total + harga) << endl;
-                    do{
-                        cout << "\nMasukkan nominal kamu\t: Rp. "; cin >> nominal;
-                        if(nominal<total){
-                            cout << "Uang tidak cukup!\t: Rp. " << (total-nominal) << endl;
-                        } else {
-                            cout << "Kembalian\t\t: Rp. " << (kembalian = nominal-total) << endl;
-                        }
-                    }while(nominal<total);
-                }
-            } else if ((merk == 'T') || (merk == 't')){
-                total = 25000000;
-                cout << "-----------------------------" << endl;
-                cout << "Motor Tiger" << endl;
-                cout << "Rp. " << total << endl;
-                cout << "-----------------------------" << endl;
-                cout << "Apakah kamu tertarik [y/n] : "; cin >> eksekusi;
-                if(eksekusi == 'n'){
-                    continue;
-                } else {
-                    cout << endl;
-                    cout << "Harga [Tiger]\t\t: Rp. " << total << endl;
-                    cout << "Pajak 10%\t\t: Rp. " << (harga = total * (10.0/100.0)) << endl;
-                    cout << "--------------------------------------------" << endl;
-                    cout << "Total Pembayaran\t: Rp. " << (total = total + harga) << endl;
-                    do{
-                        cout << "\nMasukkan nominal kamu\t: Rp. "; cin >> nominal;
-                        if(nominal<total){
-                            cout << "Uang tidak cukup!\t: Rp. " << (total-nominal) << endl;
-                        } else {
-                            cout << "Kembalian\t\t: Rp. " << (kembalian = nominal-total) << endl;
-                        }
-                    }while(nominal<total);
+            } else if((merk == "y") || (merk == "Y") || (merk == "Yamaha")){
+                merk = "Yamaha";
+                cout << "\nDealer Motor | Motor Yamaha" << endl;
+                cout << "----------------------------" << endl;
+                cout << "1. Motor Jupiter [J/j]" << endl;
+                cout << "2. Motor Mio [M/m]" << endl;
+                cout << "3. Motor Vixion [V/v]\n" << endl;
+                cout << "Pilih salah satu motor : "; cin >> motor;
+                if((motor == 'J') || (motor == 'j')){
+                    nama = "Jupiter";
+                    harga = 17000000;
+                } else if ((motor == 'M') || (motor == 'm')){
+                    nama = "Mio";
+                    harga = 13000000;
+                } else if ((motor == 'V') || (motor == 'v')){
+                    nama = "Vixion";
+                    harga = 22000000;
+                } else  {
+                    nama = "Tidak ada";
+                    harga = 0;
                 }
             } else {
-                total = 0;
-                cout << "-----------------------------" << endl;
-                cout << "Tidak ada di daftar" << endl;
-                cout << "Rp. " << total << endl;
-                cout << "-----------------------------" << endl;
-                cout << "Apakah kamu tertarik [y/n] : "; cin >> eksekusi;
-                cout << endl;
-                cout << "Harga [Tidak ada]\t: Rp. " << total << endl;
-                cout << "Pajak 10%\t\t: Rp. " << (harga = total * (10.0/100.0)) << endl;
-                cout << "--------------------------------------------" << endl;
-                cout << "Total Pembayaran\t: Rp. " << (total = total + harga) << endl;
-                do{
-                    cout << "\nMasukkan nominal kamu\t: Rp. "; cin >> nominal;
-                    if(nominal<total){
-                        cout << "Uang tidak cukup!\t: Rp. " << (total-nominal) << endl;
-                    } else {
-                        cout << "Kembalian\t: Rp. " << (kembalian = nominal-total) << endl;
-                    }
-                }while(nominal<total);
+                cout << "\nInputan Salah\n" << endl;
+                break;
             }
-        } else if((motor == 'Y') || (motor == 'y')){
-            cout << "List Motor Yamaha di Motor Gemilang" << endl;
-            cout << "1. Jupiter [J/j]" << endl;
-            cout << "2. Mio [M/m]" << endl;
-            cout << "3. Vixion [V/v]\n" << endl;
-            cout << "Apa yang kamu ingin lihat : "; cin >> merk;
-           if((merk == 'J') || (merk == 'j')){
-                total = 17000000;
-                cout << "-----------------------------" << endl;
-                cout << "Motor Jupiter" << endl;
-                cout << "Rp. " << total << endl;
-                cout << "-----------------------------" << endl;
-                cout << "Apakah kamu tertarik [y/n] : "; cin >> eksekusi;
-                if(eksekusi == 'n'){
-                    continue;
-                } else {
-                    cout << endl;
-                    cout << "Harga [Jupiter]\t\t: Rp. " << total << endl;
-                    cout << "Pajak 10%\t\t: Rp. " << (harga = total * (10.0/100.0)) << endl;
-                    cout << "--------------------------------------------" << endl;
-                    cout << "Total Pembayaran\t: Rp. " << (total = total + harga) << endl;
-                    do{
-                        cout << "\nMasukkan nominal kamu\t: Rp. "; cin >> nominal;
-                        if(nominal<total){
-                            cout << "Uang tidak cukup!\t: Rp. " << (total-nominal) << endl;
-                        } else {
-                            cout << "Kembalian\t\t: Rp. " << (kembalian = nominal-total) << endl;
-                        }
-                    }while(nominal<total);
+            cout << "--------------------------------" << endl;
+            cout << "INFORMASI DETAIL MOTOR" << endl;
+            cout << "--------------------------------" << endl;
+            cout << "Nama Motor\t: " << nama << endl;
+            cout << "Jenis Motor\t: " << merk << endl;
+            cout << "Harga\t\t: Rp. " << harga << endl;
+            cout << "--------------------------------" << endl;
+            cout << "Apakah kamu tertarik untuk membelinya [y/n] : "; cin >> pilihan;
+            cout << '\n';
+        }while((pilihan == 'n') || (pilihan == 'n'));
+            cout << "------------------------------" << endl;
+            cout << "NOTA PEMBAYARAN | DEALER MOTOR" << endl;
+            cout << "------------------------------" << endl;
+            cout << "Nama Motor\t: " << nama << " | " << merk << endl;
+            cout << "Harga\t\t: Rp. " << harga << endl;
+            cout << "PPN 10%\t\t: Rp. " << ((harga*10)/100) << endl;
+            cout << "------------------------------" << endl;
+            cout << "Total\t\t: Rp. " << (harga = harga + ((harga * 10)/100)) << endl;
+            do{
+                cout << "Bayar\t\t: Rp. "; cin >> total;
+                if(total<harga){
+                    cout << "Nominal uang kurang! Rp. " << (kembalian = harga-total) << endl;
                 }
-            } else if((merk == 'M') || (merk == 'm')){
-                total = 13000000;
-                cout << "-----------------------------" << endl;
-                cout << "Motor Mio" << endl;
-                cout << "Rp. " << total << endl;
-                cout << "-----------------------------" << endl;
-                cout << "Apakah kamu tertarik [y/n] : "; cin >> eksekusi;
-                if(eksekusi == 'n'){
-                    continue;
-                } else {
-                    cout << endl;
-                    cout << "Harga [Mio]\t\t: Rp. " << total << endl;
-                    cout << "Pajak 10%\t\t: Rp. " << (harga = total * (10.0/100.0)) << endl;
-                    cout << "--------------------------------------------" << endl;
-                    cout << "Total Pembayaran\t: Rp. " << (total = total + harga) << endl;
-                    do{
-                        cout << "\nMasukkan nominal kamu\t: Rp. "; cin >> nominal;
-                        if(nominal<total){
-                            cout << "Uang tidak cukup!\t: Rp. " << (total-nominal) << endl;
-                        } else {
-                            cout << "Kembalian\t\t: Rp. " << (kembalian = nominal-total) << endl;
-                        }
-                    }while(nominal<total);
-                }
-            } else if ((merk == 'V') || (merk == 'v')){
-                total = 22000000;
-                cout << "-----------------------------" << endl;
-                cout << "Motor Vixion" << endl;
-                cout << "Rp. " << total << endl;
-                cout << "-----------------------------" << endl;
-                cin.ignore(numeric_limits<streamsize>::max(),'\n');
-                cout << "Apakah kamu tertarik [y/n] : "; cin >> eksekusi;
-                if(eksekusi == 'n'){
-                    continue;
-                } else {
-                    cout << endl;
-                    cout << "Harga [Vixion]\t\t: Rp. " << total << endl;
-                    cout << "Pajak 10%\t\t: Rp. " << (harga = total * (10.0/100.0)) << endl;
-                    cout << "--------------------------------------------" << endl;
-                    cout << "Total Pembayaran\t: Rp. " << (total = total + harga) << endl;
-                    do{
-                        cout << "\nMasukkan nominal kamu\t: Rp. "; cin >> nominal;
-                        if(nominal<total){
-                            cout << "Uang tidak cukup!\t: Rp. " << (total-nominal) << endl;
-                        } else {
-                            cout << "Kembalian\t\t: Rp. " << (kembalian = nominal-total) << endl;
-                        }
-                    }while(nominal<total);
-                }
-            } else {
-                total = 0;
-                cout << "-----------------------------" << endl;
-                cout << "Tidak ada di daftar" << endl;
-                cout << "Rp. " << total << endl;
-                cout << "-----------------------------" << endl;
-                cout << "Apakah kamu tertarik [y/n] : "; cin >> eksekusi;
-                cout << endl;
-                cout << "Harga [Tidak ada]\t: Rp. " << total << endl;
-                cout << "Pajak 10%\t\t: Rp. " << (harga = total * (10.0/100.0)) << endl;
-                cout << "--------------------------------------------" << endl;
-                cout << "Total Pembayaran\t: Rp. " << (total = total + harga) << endl;
-                do{
-                    cout << "\nMasukkan nominal kamu\t: Rp. "; cin >> nominal;
-                    if(nominal<total){
-                        cout << "Uang tidak cukup!\t: Rp. " << (total-nominal) << endl;
-                    } else {
-                        cout << "Kembalian\t: Rp. " << (kembalian = nominal-total) << endl;
-                    }
-                }while(nominal<total);
-            }
-        } else {
-            cout << "Inputan Salah" << endl;
-        }
-        cout << "Apakah kamu ingin membeli motor lain [y/n] : "; cin >> restart;
+            }while(total<harga);
+            cout << "Kembali\t\t: Rp. " << (total-harga) << endl;
+            cout << "------------------------------" << endl;
+            cout << "TERIMAKASIH SUDAH BERBELANJA" << endl;
+            cout << "------------------------------" << endl;
+            cout << "Apakah kamu ingin membeli motor lagi [y/n] : "; cin >> restart;
     }while((restart == 'y') || (restart == 'Y'));
 }
 
-
 void soal2(){
-    cout << "Studi Kasus 2 | Piramida Menurun" << endl;
-    cout << "--------------------------------" << endl;
-    cout << "Piramida 1" << endl;
-    cout << "-------------------" << endl;
-    for(int i=5; i>=1; i--){
-        for(int j=5; j>=i; j--){
-            cout << " ";
+    int baris;
+    char pilihan;
+    cout << "\nProgram Pola Piramida Menurun" << endl;
+    do{
+        cout << "Masukkan nilai baris : "; cin >> baris;
+        for(int i=baris; i>=1; i--){
+            for(int j=baris; j>i; j--){
+                cout << " ";
+            }
+            for(int j=1; j<=i; j++){
+                cout << i << " ";
+            }
+            cout << endl;
         }
-        for(int j=i; j>=1; j--){
-            cout << i << " ";
-        }
-        cout << endl;
-    }
-    cout << endl;
-    cout << "Piramida 2" << endl;
-    cout << "-------------------" << endl;
-    for(int i=3; i>=1; i--){
-        for(int j=3; j>=i; j--){
-            cout << " ";
-        }
-        for(int j=i; j>=1; j--){
-            cout << i << " ";
-        }
-        cout << endl;
-    }
-    cout << endl;
-    cout << "Piramida 3" << endl;
-    cout << "-------------------" << endl;
-    for(int i=2; i>=1; i--){
-        for(int j=2; j>=i; j--){
-            cout << " ";
-        }
-        for(int j=i; j>=1; j--){
-            cout << i << " ";
-        }
-        cout << endl;
-    }
-    cout << endl;
+        cout << "\nApakah kamu ingin mengulanginya lagi [y/n] : "; cin >> pilihan;
+    }while((pilihan == 'y') || (pilihan == 'Y'));
 }
 
 void simulasi(){
     int pilihan;
-    cout << "Latihan UTS - Simulasi UTS Daspro C++" << endl;
-    cout << "-------------------------------------" << endl;
+    cout << "SIMULASI UTS PRAKTIK | Dasar Pemrograman C++" << endl;
+    cout << "--------------------------------------------" << endl;
     cout << "1. Program Dealer Motor Indonesia" << endl;
-    cout << "2. Program Piramida Menurun\n" << endl;
-    cout << "Pilih salah satu program : "; cin >> pilihan;
+    cout << "2. Program Pola Piramida Menurun\n" << endl;
+    cout << "Pilih salah satu program UTS : "; cin >> pilihan;
     switch(pilihan){
-        case 1:
+    case 1:
         soal1();
         break;
-        case 2 :
+    case 2:
         soal2();
         break;
-        default :
+    default:
+        cout << "Input tidak valid" << endl;
         break;
     }
 }
