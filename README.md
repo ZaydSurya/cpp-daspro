@@ -25,6 +25,7 @@ Setiap file pertemuan disusun seperti berikut:
 ├── p5/   → Pertemuan 5: Analisis Kondisi Lanjutan
 ├── p6/   → Pertemuan 6: Perulangan atau Looping
 ├── p7/   → Pertemuan 7: Nested Looping (Bersarang)
+├── simulasi/   → Latihan UTS : Simulasi UTS Pemrograman C++
 └── main.cpp  → File utama proyek
 ```
 
